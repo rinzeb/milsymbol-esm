@@ -1,7 +1,8 @@
 {
-  "name": "milsymbol",
-  "version": "2.2.0",
+  "name": "milsymbol-esm",
+  "version": "2.2.1",
   "description": "Milsymbol.js is a small library in pure javascript that creates symbols according to MIL-STD-2525 and APP6.",
+  "type": "module",
   "main": "dist/milsymbol.js",
   "exports": "./index.js",
   "types": "index.d.ts",
@@ -22,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/spatialillusions/milsymbol"
+    "url": "https://github.com/rinzeb/milsymbol-esm"
   },
-  "author": "Måns Beckman (http://www.spatialillusions.com)",
+  "author": "RinzeB",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/spatialillusions/milsymbol/issues"
   },
-  "homepage": "https://github.com/spatialillusions/milsymbol",
+  "homepage": "https://github.com/rinzeb/milsymbol-esm",
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.4.1",

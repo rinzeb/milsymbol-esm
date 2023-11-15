@@ -1,6 +1,6 @@
 # Milsymbol
 
-[![Build Status](https://travis-ci.org/spatialillusions/milsymbol.svg?branch=master)](https://travis-ci.org/spatialillusions/milsymbol)
+Fork from [https://github.com/spatialillusions/milsymbol](https://github.com/spatialillusions/milsymbol), adding ESM support.
 
 Milsymbol is a small library in pure javascript that creates military unit symbols according to MIL-STD-2525 and STANAG APP-6.
 
