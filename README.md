@@ -1,6 +1,22 @@
 # Milsymbol
 
-Fork from [https://github.com/spatialillusions/milsymbol](https://github.com/spatialillusions/milsymbol), adding ESM support.
+## Notes
+This is a fork from [https://github.com/spatialillusions/milsymbol](https://github.com/spatialillusions/milsymbol), adding ESM and Cyber support.
+
+### Cyber 
+The Cyber icons functionality of milsymbol has been increased in this fork. According to the MIL-STD 2525D App. L, the Cyber icons have a base dimension like Air, Ground, Surface, etc. However, there is only one symbol code for the Cyberspace domain (60). To be able to specify a base dimension for the Cyber icon, this library extends the symbolset codes for the Cyberspace domain as follows: 
+
+| Dimension  | Code |
+|------------|------|
+| Space      | 60   |
+| Air        | 61   |
+| Land       | 62   |
+| Surface    | 63   |
+| Subsurface | 64   |
+
+The `10036330001402000000` SIDC code represents a Friendly, Damaged, Surface, Router. 
+
+# Overview
 
 Milsymbol is a small library in pure javascript that creates military unit symbols according to MIL-STD-2525 and STANAG APP-6.
 

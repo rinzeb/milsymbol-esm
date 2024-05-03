@@ -39,7 +39,11 @@ export function metadata(ms, metadata, mapping) {
     "52": "Ground",
     "53": "Sea",
     "54": "Subsurface",
-    "60": "Air"
+    "60": "Air",
+    "61": "Air",
+    "62": "Ground",
+    "63": "Sea",
+    "64": "Subsurface",
   };
 
   var functionid = (metadata.functionid = this.options.sidc.substr(10, 10));
@@ -59,7 +63,7 @@ export function metadata(ms, metadata, mapping) {
     metadata.unit = true;
 
   //SymbolSets in Space
-  if (symbolSet == "05" || symbolSet == "06" || symbolSet == "50")
+  if (symbolSet == "05" || symbolSet == "06" || symbolSet == "50" || symbolSet == "60")
     metadata.space = true;
   //SymbolSets that are Activities
   if (symbolSet == "40") metadata.activity = true;
@@ -68,7 +72,8 @@ export function metadata(ms, metadata, mapping) {
   //SymbolSets that are control-measure
   if (symbolSet == "25") metadata.controlMeasure = true;
   //SymbolSets in Cyberpace
-  if (symbolSet == "60") metadata.cyberspace = true;
+  if (symbolSet == "60" || symbolSet == "61" || symbolSet == "62" || symbolSet == "63" || symbolSet == "64")
+    metadata.cyberspace = true;
   //Sea Mines with MEDAL icn
   if (symbolSet == "36" && this.style.alternateMedal === false)
     metadata.fill = false;

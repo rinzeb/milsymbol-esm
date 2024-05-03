@@ -17,7 +17,7 @@ export default {
     _STD2525
   ) {
     //Adds support for Cyberspace
-    if (symbolSet == "60") {
+  if (symbolSet == "60" || symbolSet == "61" || symbolSet == "62" || symbolSet == "63" || symbolSet == "64") {
       sId["110000"] = [];
       sId["110100"] = [icn["CY.IC.COMMAND AND CONTROL (C2)"]];
       sId["110200"] = [icn["CY.IC.HERDER"]];
